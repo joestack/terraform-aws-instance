@@ -17,7 +17,7 @@ provider "vault" {
 }
 
 data "vault_aws_access_credentials" "creds" {
-  backend = "aws"
+  backend = "secret/aws"
   role    = "deploy"
 }
 
